@@ -1,9 +1,10 @@
-package com.dabugakov.packetnews.buillders.kommersant;
+package com.dabugakov.packetnews.builders.kommersant;
 
 /**
  * Created by DABugakov on 17.11.2015.
  */
 public class KommersantBuilder {
+
     private String kommersantUrl;
     private String places;
     private String categories;
@@ -14,6 +15,7 @@ public class KommersantBuilder {
     private String resultsCount;
     private String page;
     private String searchQuery;
+
 
     public static class Builder {
         private String kommersantUrl ="";

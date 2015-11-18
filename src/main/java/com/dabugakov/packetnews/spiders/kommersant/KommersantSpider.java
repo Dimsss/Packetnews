@@ -1,6 +1,6 @@
 package com.dabugakov.packetnews.spiders.kommersant;
 
-import com.dabugakov.packetnews.buillders.kommersant.KommersantBuilder;
+import com.dabugakov.packetnews.builders.kommersant.KommersantBuilder;
 import com.dabugakov.packetnews.system.Win1251;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -48,7 +48,7 @@ public class KommersantSpider {
         Document document = null;
         try {
             Thread.sleep(30);
-            document = Jsoup.connect(url).timeout(1000).get();
+            document = Jsoup.connect(url).timeout(10000).get();
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
